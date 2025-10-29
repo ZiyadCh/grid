@@ -1,9 +1,10 @@
 * {
+  font-family: "arial";
   margin: 0;
   padding: 0;
 }
 body {
-  background: #99f;
+  background: #ccf;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -18,12 +19,13 @@ body > div {
 }
 
 .card:nth-child(1) {
+  position: relative;
   grid-column: 1/3;
-  background: #90f;
+  background: #60f;
 }
 
 .card:nth-child(2) {
-  background: #50f;
+  background: #334;
 }
 .card:nth-child(3) {
   background: #fff;
@@ -37,7 +39,21 @@ body > div {
 }
 .card:nth-child(4) {
   grid-column: 2/4;
-  background: #33f;
+  background: #223;
+}
+#quote {
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  opacity: 0.6;
+}
+h2 {
+  position: relative;
+  z-index: 9;
 }
 
 html {
@@ -63,5 +79,10 @@ img {
   img {
     width: 20px;
     height: 20px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 }
