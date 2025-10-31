@@ -72,7 +72,7 @@ img {
   margin: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   html {
     font-size: 8px;
   }
@@ -81,9 +81,9 @@ img {
     height: 20px;
   }
   body {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
   }
 
   .card {
